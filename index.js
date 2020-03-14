@@ -23,13 +23,12 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
   for (let i = 0; i < array.length; i++) {
-    var answer = findFn(array[i])
-  }
-  return answer
-}
-
-function findFn(array) {
-    if (!array.indexOf('c')) {
+    if(array[i] !== findFn()){
       return null
     }
+}
+
+function findFn(value) {
+    return value
+  
 }
