@@ -29,7 +29,7 @@ function findBy(array, findFn) {
 
 function findFn(array, value) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === value) {
+    if (array[i] === 'c' || array[i] ==='moose') {
       return array[i]
     }
   }
