@@ -22,19 +22,12 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  if (!findFn(array)) {
-    return null;
+  for (let i = 0; i < array.length; i++)
+  if (array[i] !== findFn) {
+    return null
   }
 }
 
-function findFn(array) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'c') {
-      return array[i]
-    }
-    if (array[i] === 'moose') {
-      return array[i]
-    }
-  }
-  return false
+function findFn(element) {
+  return element
 }
