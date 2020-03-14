@@ -20,3 +20,17 @@ function keepGoing(array, changeValue, skipValue) {
   }
   return array
 }
+
+function findBy(array, findFn) {
+  if (!findFn(array)) {
+    return null;
+  }
+}
+
+function findFn(array) {
+  for (let i = 0; i < array.length) {
+    if (array[i] === 'c') {
+      return true
+    }
+  }
+}
