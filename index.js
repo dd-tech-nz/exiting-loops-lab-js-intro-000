@@ -22,14 +22,14 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  findFn(array)
+  for (let i = 0; i < array.length; i++) {
+    var answer = findFn(array[i])
+  }
+  return answer
 }
 
-function findFn(aray) {
-    const c = Math.floor(Math.random() * 100);
-    for (let i = 0; i < array.length; i++) {
-      if (array[i] !== c) {
-        return null
-      }
+function findFn(array) {
+    if (!array.indexOf('c')) {
+      return null
     }
 }
