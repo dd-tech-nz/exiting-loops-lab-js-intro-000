@@ -22,7 +22,7 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  if (!findFn(array)) {
+  if (findFn(array) !== 'c') {
     return null;
   }
 }
@@ -30,7 +30,7 @@ function findBy(array, findFn) {
 function findFn(array) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === 'c') {
-      return true
+      return array[i]
     }
   }
 }
