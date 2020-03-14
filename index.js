@@ -30,5 +30,5 @@ function findBy(array, findFn) {
 
 function findFn(value) {
     return value
-  
+
 }
