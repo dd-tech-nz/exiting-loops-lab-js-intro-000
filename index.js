@@ -29,8 +29,12 @@ function findBy(array, findFn) {
 
 function findFn(array) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'c' || array[i] ==='moose') {
+    if (array[i] === 'c') {
+      return array[i]
+    }
+    if (array[i] === 'moose') {
       return array[i]
     }
   }
+  return false
 }
