@@ -23,6 +23,7 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
   findFn(array)
+}
 
 function findFn(aray) {
     const c = Math.floor(Math.random() * 100);
