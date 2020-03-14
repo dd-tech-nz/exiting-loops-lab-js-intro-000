@@ -30,5 +30,5 @@ function findBy(array, findFn) {
 }
 
 function findFn() {
-  return moose
+  return 'moose'
 }
