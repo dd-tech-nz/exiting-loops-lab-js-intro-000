@@ -29,6 +29,6 @@ function findBy(array, findFn) {
   }
 }
 
-function findFn(element) {
-  return element
+function findFn() {
+  return moose
 }
