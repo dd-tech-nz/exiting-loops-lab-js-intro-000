@@ -22,14 +22,14 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  if (findFn(array) !== 'c') {
+  if (!findFn(array, value)) {
     return null;
   }
 }
 
-function findFn(array) {
+function findFn(array, value) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'c') {
+    if (array[i] === value) {
       return array[i]
     }
   }
