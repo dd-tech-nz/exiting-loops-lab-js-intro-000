@@ -28,7 +28,7 @@ function findBy(array, findFn) {
 }
 
 function findFn(array) {
-  for (let i = 0; i < array.length) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] === 'c') {
       return true
     }
