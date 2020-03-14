@@ -30,6 +30,7 @@ function findBy(array, findFn) {
   }
 }
 
-function findFn(element) {
-  return element
+function findFn() {
+    const c = Math.floor(Math.random() * 100);
+    return c
 }
