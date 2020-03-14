@@ -22,16 +22,12 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  //var search = findFn
-  for (let i = 0; i < array.length; i++) {
-    if(array[i] !== findFn){
-      return null
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (findFn(array[i])) {
+      return array[i]
     }
-}
+  }
+  return null
 }
 
-function findFn(value) {
-    value = 'moose'
-    return value
 
-}
